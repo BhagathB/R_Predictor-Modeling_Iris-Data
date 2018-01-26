@@ -4,6 +4,8 @@ load("Tree.Rdata")
 library(RColorBrewer)
 palette <- brewer.pal(3,"Set2")
 
+
+# Loading the predictor to Production using Shiny APP
 ui <- fluidPage(titlePanel("Magical Iris Prediction"),
                 sidebarLayout(sidebarPanel(sliderInput(inputId = "petal.length",
                                                        min = 1,
